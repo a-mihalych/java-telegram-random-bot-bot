@@ -87,7 +87,7 @@ public class BotImpl extends TelegramLongPollingBot {
                     if (send instanceof SendDice) {
                         botService.pause();
                         execute(Command.getSendMessage(message.getChatId(), 0,
-                                botService.parseNumber(String.valueOf(message.getDice().getValue()))));
+                                Command.parseNumber(String.valueOf(message.getDice().getValue()))));
                     }
                 } else {
                     execute((SendSticker) send);

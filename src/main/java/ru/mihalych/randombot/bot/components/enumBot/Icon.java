@@ -54,8 +54,6 @@ public enum Icon {
                 return EmojiParser.parseToUnicode(ICON_8.kodIcon);
             case "9":
                 return EmojiParser.parseToUnicode(ICON_9.kodIcon);
-//            case "-":
-//                return EmojiParser.parseToUnicode(ICON_MINUS.kodIcon);
         }
         return null;
     }
